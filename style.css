@@ -1,0 +1,47 @@
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    
+    }
+    body{
+
+        background-image: url("240_F_519012669_egUY3ajb9QnCNaAesyj3yp5S2748tebw.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        
+        .gallery {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+          .image {
+            margin: 10px;
+            width: calc(33.33% - 20px);
+            overflow: hidden;
+          }
+          .image img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s;
+          }
+          .image:hover img {
+            transform: scale(1.1);
+          }
+          @media screen and (max-width: 768px) {
+            .image {
+              width: calc(50% - 20px);
+            }
+          }
+          
+          @media screen and (max-width: 480px) {
+            .image {
+              width: 100%;
+            }
+          }
+    }
